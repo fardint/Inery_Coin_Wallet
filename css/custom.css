@@ -1,0 +1,67 @@
+:root{
+    --blue : #0C0444;
+    --blue-1 : #309EAA;
+    --blue-2 : #00ffff;
+}
+
+.color_blue-2{
+    background-color: var(--blue-2);
+    border:solid 2px var(--blue-2) ;
+    color: var(--blue);
+}
+.color_blue-2:hover,.color_blue-2:active{
+    transition: background 0.5s ease;
+    border:solid 2px var(--blue-2) ;
+    color: var(--blue-2);
+}
+
+.color_blue {
+    background-color: var(--blue);
+}
+
+.color_blue-1 {
+    background-image: linear-gradient(0deg, #0C0444, #00ffff);
+}
+
+.background_image{
+    background: #0C0444 url(/img/wireframe.svg) no-repeat -1px 1px;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1px;
+    overflow: hidden;
+    animation: background_animation ease 10s infinite;
+}
+
+.card_custom-logo {
+    max-width: 10rem;
+}
+
+.up-down {
+    animation: up-down 3s ease-in-out infinite;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes background_animation {
+    0% {
+        background-color: var(--blue);
+    }
+    50% {
+        background-color: var(--blue-2);
+    }
+    100% {
+        background-color: var(--blue);
+    }
+}

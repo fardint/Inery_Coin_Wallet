@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=chrome">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="shortcut icon" href="img/main-icon.png" type="image/x-icon">
+    <title>INR Wallet</title>
+</head>
+<body class="container-fluid p-0 color_blue background_image">
+    <div class="container">
+        <div class="row vh-100">
+            <div class="col-sm-8 col-lg-4 mx-auto my-sm-5 rounded color_blue-1">
+                <div class="row h-100">
+                    <div class="col-8 mx-auto d-flex flex-column justify-content-evenly">
+                        <div class="card_custom-logo mx-auto">
+                            <img src="img/ufo.png" alt="ufo" class="img-fluid up-down">
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="img/main-logo.png" class="img-fluid card_custom-logo mx-auto" alt="Inery Wallet">
+                            <p class="fw-semibold text-center mt-3">
+                                This a beta version of crypto wallet for inery coin.
+                                Try it with your own risks.
+                            </p>
+                            <a class="btn px-4 color_blue-2 fw-semibold mt-3" onclick="login()">
+                                Connect
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/bootstrap.bundle.js"></script>
+<script>
+    let login_status = false, private_key;
+    function login() {
+        if (login_status) return true;
+        private_key = prompt('Please enter your INR Coin private key');
+    }
+</script>
+</body>
+</html>
